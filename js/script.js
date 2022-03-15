@@ -134,65 +134,53 @@ function nestData() {
     children: rename(nest.entries(pearlData.sourceData)), //compute the nest
   };
 
-  // console.log(pearlData.treeData);
-
   pearlData.sourceData.forEach(function (d, i) {
-    // var author = d.last_name + ", " + d.first_name;
-    // if (pearlData.authors.indexOf(author) == -1) {
     d.authorID = +i;
     d.author = d.last_name + ", " + d.first_name;
-    // pearlData.authors.push([d.authorID, author]);
-    // }
-
-    // if (pearlData.articles.indexOf(d.researcher_id) == -1) {
     pearlData.articles.push(d.researcher_id);
 
     d3.selectAll(".article-selector")
       .append("option")
       .attr("value", d.authorID)
       .text(d.researcher_id);
-    // }
   });
-
-  // pearlData.authors.sort();
 
   pearlData.sourceData.sort(function (a, b) {
     return a.author > b.author ? 1 : -1;
   });
-  // pearlData.sourceData.sort((a, b) => a.author - b.author);
 
   console.log(pearlData.sourceData);
 
   d3.selectAll(".author-selector")
     .selectAll("option")
-    .data(/* pearlData.authors */ pearlData.sourceData)
+    .data(pearlData.sourceData)
     .enter()
     .append("option")
     .attr("value", function (d, i) {
-      return /* +d[0] */ d.authorID;
+      return d.authorID;
     })
     .text(function (d, i) {
-      // d.authorID
-
-      return /* d[1] */ d.author;
+      return d.author;
     });
 
-  drawChart(pearlData.treeData);
+  drawChart(pearlData.treeData, selectedTopic);
 
   return;
 } // end function nestData
 
-function drawChart(root) {
-  // console.log(root);
+function drawChart(root, selectedTopic) {
   var svg = d3.select("svg").attr("width", w).attr("height", h);
-  /* margin = 10, */
   diameter = +svg.attr("height") - margin * 2;
   var g = svg
     .append("g")
-    .attr(
-      "transform",
-      "translate(" + w /* diameter */ / 2 + "," + h /* diameter */ / 2 + ")"
-    );
+    .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
+
+  d3.selectAll(".topicNameBanner")
+    .append("label")
+    .style("font-size", "2.0rem")
+    .style("font-weight", "bold")
+    .style("vertical-align", "middle")
+    .text("Network Hierarchy for '" + selectedTopic + "'");
 
   var color = d3
     .scaleLinear()
