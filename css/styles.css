@@ -1,0 +1,150 @@
+body {
+    /* font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; */
+    font-family: 'Arial';
+    margin: 0px;
+    position: relative;
+    font-size: 14px;
+    /* width: 960px; */
+}
+
+
+.node {
+    cursor: pointer;
+}
+
+.node:hover {
+    fill: #01324b !important;
+    stroke: #be1818;
+    stroke-width: 2.5px;
+}
+
+.node--leaf {
+    fill: white;
+}
+
+.label {
+    font: 11px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    text-anchor: middle;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
+}
+
+.label,
+.node--root
+
+/* ,
+.node--leaf */
+    {
+    pointer-events: none;
+}
+
+.author-selector {
+    fill: #0070a8;
+}
+
+.article-selector {
+    fill: #c75301;
+}
+
+.btn {
+    margin-right: 50px;
+}
+
+.selector {
+    margin-right: 50px;
+}
+
+.instructionsList {
+    margin-bottom: 10px;
+}
+
+.mask {
+    width: 100%;
+    height: 100%;
+    background-color: #FFF;
+    opacity: 0.95;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+.topic-selection-form {
+    text-align: center;
+}
+
+.visualisation-form {
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* form {
+    text-align: center;
+} */
+
+.blueHighlight {
+    color: #0070a8;
+    font-weight: bold;
+}
+
+.orangeHighlight {
+    color: #c75301;
+    font-weight: bold;
+}
+
+.instructions {
+    width: 50%;
+    margin: 50px auto;
+
+}
+
+.instruction {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+.submitTopic {
+    margin: 50px;
+}
+
+.radio {
+    margin-top: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+.reset {
+    margin-right: 25px;
+}
+
+
+.box {
+    width: 300px;
+    border: 1px solid #000;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.toggle-container {
+    transition: height 0.35s ease-in-out;
+    overflow: hidden;
+}
+
+.toggle-container:not(.active) {
+    display: none;
+}
+
+.instructionLabel {
+    font-size: 10px;
+    font-weight: bold;
+    text-align: left;
+    margin: 0px;
+    border-style: solid;
+    padding: 2px;
+    border-color: #000;
+}
+
+.instructionLabel:hover {
+
+    cursor: pointer;
+}

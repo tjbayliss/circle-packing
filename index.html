@@ -1,162 +1,200 @@
 <!DOCTYPE html>
 <head>
   <meta charset="utf-8" />
-  <title>Zoomable Circle Packing</title>
-  <style>
-    .node {
-      cursor: pointer;
-    }
-
-    .node:hover {
-      stroke: #000;
-      stroke-width: 1.5px;
-    }
-
-    .node--leaf {
-      fill: white;
-    }
-
-    .label {
-      font: 11px 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      text-anchor: middle;
-      text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, -1px 0 0 #fff, 0 -1px 0 #fff;
-    }
-
-    .label,
-    .node--root,
-    .node--leaf {
-      pointer-events: none;
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>PEARL - Zoomable Circle Packing</title>
 </head>
 <body>
-  <svg width="960" height="960"></svg>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script>
-    var svg = d3.select('svg'),
-      margin = 20,
-      diameter = +svg.attr('width'),
-      g = svg
-        .append('g')
-        .attr(
-          'transform',
-          'translate(' + diameter / 2 + ',' + diameter / 2 + ')'
-        )
+  <div class="mask">
+    <div class="instructions">
+      <!-- <li class="instructionsList">
+        This prototype visualisation has been created for user testing in
+        relation to the PEARL project.
+      </li>
+      <li class="instructionsList">
+        It is presented as a possible replacement for the netowrk graphs
+        currently adopted in the PEARL PoC, namely:
+        <img src="image/image0.png" width="15%" height="15%" />
+      </li>
+      <li class="instructionsList">
+        The intention of this testing phase is to focus on user functionality,
+        not colour branding. Hence, the majority of colour styling has been
+        removed from this visualisation, and replaced by gray-scale design.
+        Light coloured styling has only been adopted in relation to some user
+        interaction with the chart. Where this is so, standard SNG primary and
+        secondary colour palettes have been adopted.
+      </li>
 
-    var color = d3
-      .scaleLinear()
-      .domain([-1, 5])
-      .range(['hsl(152,80%,80%)', 'hsl(228,30%,40%)'])
-      .interpolate(d3.interpolateHcl)
+      <li class="instructionsList">
+        When considering your feedback, focus on the following points:
+        <ol>
+          <li>
+            <b>User Functionality:</b> what functionality is currently not
+            present that you would like to be provided;
+          </li>
+          <li>
+            <b>Tooltip Content:</b> what data content/value-added information
+            would be useful on the tooltip;
+          </li>
+        </ol>
+      </li> -->
+      <!--     <li class="instructionsList">
+        Use the radio buttons below to select the main topic you would like to
+        explore using this prototype visualisation.
+      </li> -->
+    </div>
+    <form class="topic-selection-form">
+      <p class="instruction">Please select your preferred PEARL Topic:</p>
+      <!--  
+      <input
+        type="radio"
+        id="aerogels"
+        class="radio aerogels"
+        name="topic"
+        value="aerogels"
+      />
+      <label for="aerogels">aerogels</label>
+      <input
+        type="radio"
+        id="black-holes"
+        class="radio black-holes"
+        name="topic"
+        value="black holes"
+      />
+      <label for="black-holes">black holes</label><br />
+      <input
+        type="button"
+        value="Submit"
+        class="submitTopic"
+        id="submitTopic"
+      /> -->
+    </form>
+  </div>
+  <!-- end mask -->
 
-    var pack = d3
-      .pack()
-      .size([diameter - margin, diameter - margin])
-      .padding(2)
+  <div id="container" class="container hide">
+    <!--     <div class="js-toggle instructionLabel" data-container="toggle-1">
+      Instructions for Prototype
+    </div> -->
+    <!-- <div class="toggle-container" id="toggle-1">
+      <div class="instructions">
+        <li class="instructionsList">
+          Some functionality has been provided, namely:
+          <ol>
+            <li>
+              Users can modify the displayed hierachy shown in the visualisation
+              by modifying the selection in any of the 'Level' selection lists.
+              The chart is initially built using an initial default example
+              hierarchy of
+              <b>'Continent > Country > Institute'</b>. Users may modify any
+              individual 'level' selection list, followed by 'Submit' to refresh
+              the chart to display the new requested hierarchy.
+            </li>
+            <li>
+              User can select an individual author in the first selection list
+              ("<b><i>Author Search:</i></b
+              >") to visually/physically locate all articles associated with
+              that author. All associated articles will be highlighted to you in
+              <span class="blueHighlight">blue</span>.
+            </li>
+            <li>
+              Users can select an individual article in the second selection
+              list ("<b><i>Article Search:</i></b
+              >") to visually/physcially locate the article in the hierarchy.
+              The article will be highlighted to you in
+              <span class="orangeHighlight">orange</span>. The visualisation
+              will then automatically zoom to centre and 'focus' on the selected
+              article.
+            </li>
+            <li>
+              Users may interograte any of the circular nodes using the mouse
+              cursor. A node will be highlighted in SNG branded colours as the
+              cursor passes over the circle. Users may then click on any
+              circular node to automatically 'zoom' the visualisation to that
+              selection. The chart will only zoom to nodes that are/can be
+              highlighted.
+            </li>
+            <li>
+              At any point users may click any of the larger containing/parent
+              node circles to zoom out to that level. Clicking on the largest
+              node circle will zoom out and reset the chart to its full extent.
+            </li>
+            <li>
+              At any point users may click 'Reset Chart View' to zoom out from
+              the selection to again view the chart at its full extent.
+            </li>
+            <li>
+              A basic information tooltip is provided when a user moves the
+              mouse cursor over a node. This can be used to display additional
+              value added information in the final system.
+            </li>
+          </ol>
+        </li>
+      </div>
+    </div> -->
+    <form class="visualisation-form">
+      <!--
+        "Continent"	"Country"	"Institute"	"Author"	"Discipline"	"FoR1"	"FoR2"
+      -->
+      <label for="cars">Level 1:</label>
+      <select name="level1" id="level1">
+        <option value="none">none</option>
+        <option value="countries" selected>countries</option>
+        <option value="affiliation">affiliation</option>
+        <option value="year">year</option>
+      </select>
 
-    d3.json('data/flare.json', function (error, root) {
-      if (error) throw error
+      <label for="cars">Level 2:</label>
+      <select name="level2" id="level2">
+        <option value="none">none</option>
+        <option value="countries">countries</option>
+        <option value="affiliation" selected>affiliation</option>
+        <option value="year">year</option>
+      </select>
 
-      root = d3
-        .hierarchy(root)
-        .sum(function (d) {
-          return d.size
-        })
-        .sort(function (a, b) {
-          return b.value - a.value
-        })
+      <label for="cars">Level 3:</label>
+      <select name="level3" id="level3">
+        <option value="none">none</option>
+        <option value="countries">countries</option>
+        <option value="affiliation">affiliation</option>
+        <option value="year" selected>year</option>
+      </select>
+      <input
+        type="button"
+        value="Submit"
+        class="btn"
+        id="btn"
+        onClick="submitNewHierarchy(this)"
+      />
 
-      var focus = root,
-        nodes = pack(root).descendants(),
-        view
+      <button type="button" value="reset" class="reset" id="reset">
+        Reset Chart View
+      </button>
 
-      var circle = g
-        .selectAll('circle')
-        .data(nodes)
-        .enter()
-        .append('circle')
-        .attr('class', function (d) {
-          return d.parent
-            ? d.children
-              ? 'node'
-              : 'node node--leaf'
-            : 'node node--root'
-        })
-        .style('fill', function (d) {
-          return d.children ? color(d.depth) : null
-        })
-        .on('click', function (d) {
-          if (focus !== d) zoom(d), d3.event.stopPropagation()
-        })
+      <label for="cars" class="researcher">Author Search:</label>
+      <select
+        name="researcher"
+        class="researcher author-selector selector"
+        id="author-selector"
+        onChange="findFunction(this)"
+      >
+        <option value="none">none</option>
+      </select>
 
-      var text = g
-        .selectAll('text')
-        .data(nodes)
-        .enter()
-        .append('text')
-        .attr('class', 'label')
-        .style('fill-opacity', function (d) {
-          return d.parent === root ? 1 : 0
-        })
-        .style('display', function (d) {
-          return d.parent === root ? 'inline' : 'none'
-        })
-        .text(function (d) {
-          return d.data.name
-        })
+      <label for="cars" class="article">Article Search:</label>
+      <select
+        name="article"
+        class="article article-selector selector"
+        id="article-selector"
+        onChange="findFunction(this)"
+      >
+        <option value="none">none</option>
+      </select>
+    </form>
+    <svg width="960" height="960"></svg>
+  </div>
 
-      var node = g.selectAll('circle,text')
-
-      svg.style('background', color(-1)).on('click', function () {
-        zoom(root)
-      })
-
-      zoomTo([root.x, root.y, root.r * 2 + margin])
-
-      function zoom (d) {
-        var focus0 = focus
-        focus = d
-
-        var transition = d3
-          .transition()
-          .duration(d3.event.altKey ? 7500 : 750)
-          .tween('zoom', function (d) {
-            var i = d3.interpolateZoom(view, [
-              focus.x,
-              focus.y,
-              focus.r * 2 + margin
-            ])
-            return function (t) {
-              zoomTo(i(t))
-            }
-          })
-
-        transition
-          .selectAll('text')
-          .filter(function (d) {
-            return d.parent === focus || this.style.display === 'inline'
-          })
-          .style('fill-opacity', function (d) {
-            return d.parent === focus ? 1 : 0
-          })
-          .on('start', function (d) {
-            if (d.parent === focus) this.style.display = 'inline'
-          })
-          .on('end', function (d) {
-            if (d.parent !== focus) this.style.display = 'none'
-          })
-      }
-
-      function zoomTo (v) {
-        var k = diameter / v[2]
-        view = v
-        node.attr('transform', function (d) {
-          return 'translate(' + (d.x - v[0]) * k + ',' + (d.y - v[1]) * k + ')'
-        })
-        circle.attr('r', function (d) {
-          return d.r * k
-        })
-      }
-    })
-  </script>
+  <script src="js/d3.v5.min.js"></script>
+  <script src="js/selector-page.js"></script>
+  <script src="js/script.js"></script>
 </body>

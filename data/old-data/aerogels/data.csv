@@ -1,0 +1,124 @@
+﻿Article,Continent,Country,Institute,Gender,Discipline,FoR1,FoR2,Authors
+Article 1,North America,USA,Univ. of LA,Male,C,W,B,Dr BCQV
+Article 2,North America,USA,Univ. of LA,Female,F,Y,X,"Dr XLKX, Dr BCQV"
+Article 3,North America,USA,Univ. of LA,Male,Y,C,F,Dr YSTI
+Article 4,North America,USA,Univ. of San Francisco,Female,E,U,G,Dr ZHSI
+Article 5,North America,USA,Univ. of San Francisco,Male,N,F,R,Dr BPNN
+Article 6,North America,USA,Univ. of San Francisco,Female,X,K,I,Dr WZHY
+Article 7,North America,USA,Univ. of San Francisco,Male,M,H,J,Dr NOAJ
+Article 8,North America,USA,Univ. of San Francisco,Female,Q,L,G,Dr CMSR
+Article 9,North America,USA,Univ. of San Francisco,Male,O,R,C,Dr RBSM
+Article 10,North America,USA,Univ. of San Francisco,Female,U,S,P,Dr KPES
+Article 11,North America,USA,Univ. of Washington,Male,A,J,C,Dr IZLR
+Article 12,North America,USA,Univ. of Washington,Female,W,C,H,Dr YHTN
+Article 13,North America,USA,Univ. of Washington,Male,Q,Q,U,Dr DVKL
+Article 14,North America,USA,Univ. of Washington,Female,Q,C,B,Dr UDEK
+Article 15,North America,USA,Univ. of Detroit,Male,L,R,S,Dr THEH
+Article 16,North America,Canada,Univ. of Toronto,Female,P,U,H,Dr ZNPQ
+Article 17,North America,Canada,Univ. of Toronto,Male,F,E,O,Dr JTPJ
+Article 18,North America,Canada,Univ. of Toronto,Female,L,R,H,Dr WTBF
+Article 19,North America,Canada,Univ. of Toronto,Male,M,V,S,Dr BDVC
+Article 20,North America,Canada,Univ. of Toronto,Female,K,J,T,Dr XWEF
+Article 21,North America,Canada,Univ. of Vancouver,Male,H,P,B,Dr GRZG
+Article 22,North America,Canada,Univ. of Vancouver,Female,M,W,X,Dr ADFQ
+Article 23,North America,Canada,Univ. of Vancouver,Male,J,W,U,Dr WSGB
+Article 24,North America,Canada,Univ. of Vancouver,Female,F,O,B,Dr EUNQ
+Article 25,North America,Canada,Univ. of Vancouver,Male,V,W,P,Dr LGMK
+Article 26,North America,Mexico,Univ. of Mexico City,Female,C,Y,Q,Dr SIQY
+Article 27,North America,Mexico,Univ. of Mexico City,Male,R,F,X,Dr HLQM
+Article 28,North America,Mexico,Univ. of Mexico City,Female,K,B,U,Dr JOFP
+Article 29,North America,Mexico,Univ. of Mexico City,Male,W,N,C,Dr ATBO
+Article 30,North America,Mexico,Univ. of Mexico City,Female,B,V,N,Dr VTCV
+Article 31,North America,Mexico,Univ. of Mexico City,Male,D,J,N,Dr EKXA
+Article 32,North America,Mexico,Univ. of Mexico City,Female,L,Q,Y,Dr FAPK
+Article 33,North America,Mexico,Univ. of Mexico City,Male,D,F,X,Dr JUCJ
+Article 34,North America,Mexico,Univ. of Cancun,Female,F,Y,T,Dr VWMA
+Article 35,North America,Mexico,Univ. of Cancun,Male,D,W,V,Dr YZPU
+Article 36,North America,Mexico,Univ. of Cancun,Female,P,U,V,Dr NDBF
+Article 37,North America,Mexico,Univ. of Cancun,Male,H,V,T,Dr LFJH
+Article 38,South America,Brazil,Univ. of Sao Paulo,Female,B,M,Y,Dr MZLM
+Article 39,South America,Brazil,Univ. of Sao Paulo,Male,L,N,P,Dr LPAB
+Article 40,South America,Brazil,Univ. of Sao Paulo,Female,P,K,Y,Dr XCVJ
+Article 41,South America,Brazil,Univ. of Sao Paulo,Male,B,W,N,Dr MCEY
+Article 42,South America,Brazil,Univ. of Sao Paulo,Female,M,Z,C,Dr DNPJ
+Article 43,South America,Brazil,univ. of Rio De Janeiro,Male,B,A,E,Dr OGWX
+Article 44,South America,Brazil,univ. of Rio De Janeiro,Female,W,J,F,Dr JWBP
+Article 45,South America,Argentina,Univ. of Buenos Aires,Male,D,M,L,Dr AYFU
+Article 46,South America,Argentina,Univ. of Buenos Aires,Female,O,K,J,Dr TQEX
+Article 47,South America,Argentina,Univ. of Buenos Aires,Male,E,B,N,Dr ASRM
+Article 48,South America,Argentina,Univ. of Buenos Aires,Female,R,Z,Z,Dr ENPF
+Article 49,South America,Argentina,Univ. of Buenos Aires,Male,E,I,A,Dr QAVD
+Article 50,Europe,England,Univ. of East Anglia,Female,H,L,B,Dr LZRZ
+Article 51,Europe,England,Univ. of East Anglia,Male,U,V,X,Dr AXSQ
+Article 52,Europe,England,Univ. of East Anglia,Female,Y,M,Q,Dr TIDO
+Article 53,Europe,England,Univ. of East Anglia,Male,V,K,O,Dr JBRI
+Article 54,Europe,England,Univ. of East Anglia,Female,R,B,Z,Dr DRSA
+Article 55,Europe,England,Univ. of East Anglia,Male,W,X,U,Dr YIHF
+Article 56,Europe,England,Univ. of East Anglia,Female,L,W,X,Dr WYGB
+Article 57,Europe,England,Univ. of East Anglia,Male,N,V,P,Dr NCYI
+Article 58,Europe,England,Univ. of East Anglia,Female,N,P,Q,Dr EDOZ
+Article 59,Europe,England,Univ. of East Anglia,Male,P,W,O,Dr EHJG
+Article 60,Europe,England,Univ. of Greenwich,Female,I,D,I,Dr HGLR
+Article 61,Europe,England,Univ. of Greenwich,Male,O,M,Y,Dr PUNG
+Article 62,Europe,England,Univ. of Greenwich,Female,K,K,Q,Dr GCLU
+Article 63,Europe,England,Univ. of Greenwich,Male,C,O,T,Dr ZOMO
+Article 64,Europe,England,Univ. of Greenwich,Female,I,D,O,Dr ZAJT
+Article 65,Europe,England,Univ. of Greenwich,Male,J,E,N,Dr POZH
+Article 66,Europe,England,Univ. of Greenwich,Female,E,Y,S,Dr WVLX
+Article 67,Europe,England,Univ. of Greenwich,Male,Y,D,Y,Dr OJEI
+Article 68,Europe,England,Univ. of Greenwich,Female,L,B,M,Dr LDOU
+Article 69,Europe,England,Univ. of Greenwich,Male,X,W,R,Dr JXAZ
+Article 70,Europe,England,Univ. of Greenwich,Female,Y,U,Y,Dr LDIP
+Article 71,Europe,England,Univ. of Greenwich,Male,D,W,A,Dr CMZA
+Article 72,Europe,England,"Imperial College, London",Female,E,C,W,Dr UWHF
+Article 73,Europe,England,"Imperial College, London",Male,O,X,Q,Dr SDYC
+Article 74,Europe,England,"Imperial College, London",Female,V,P,Z,Dr CTNH
+Article 75,Europe,England,"Imperial College, London",Male,T,Q,P,Dr PESX
+Article 76,Europe,England,"Imperial College, London",Female,W,N,X,Dr PGBZ
+Article 77,Europe,England,"Imperial College, London",Male,C,D,Z,Dr WTPT
+Article 78,Europe,Germany,Univ. of Berlin,Female,B,M,F,Dr VYKJ
+Article 79,Europe,Germany,Univ. of Berlin,Male,Z,D,A,Dr FUJX
+Article 80,Asia,Japan,Univ. of Tokyo,Female,W,F,E,Dr YFEJ
+Article 81,Asia,Japan,Univ. of Tokyo,Male,S,A,I,Dr PDXG
+Article 82,Asia,Japan,Univ. of Tokyo,Female,O,J,Y,Dr NSCE
+Article 83,Asia,Japan,Univ. of Tokyo,Male,J,R,B,Dr OOXA
+Article 84,Asia,Japan,Univ. of Tokyo,Female,A,X,O,Dr IRZZ
+Article 85,Asia,Japan,Univ. of Sapphoro,Male,X,G,J,Dr MGSC
+Article 86,Asia,Japan,Univ. of Sapphoro,Female,D,P,X,Dr SBOI
+Article 87,Asia,Japan,Univ. of Sapphoro,Male,G,M,U,Dr SLVG
+Article 88,Asia,Japan,Univ. of Sapphoro,Female,Q,K,F,Dr WGIS
+Article 89,Asia,Japan,Univ. of Sapphoro,Male,B,V,H,Dr YEAH
+Article 90,Asia,China,Univ. of Shanghai,Female,W,U,G,Dr EOVD
+Article 91,Asia,China,Univ. of Shanghai,Male,E,R,N,Dr DNZF
+Article 92,Asia,China,Univ. of Shanghai,Female,O,G,T,Dr DDIW
+Article 93,Africa,Egypt,Univ. of Cairo,Male,V,P,J,Dr ITSI
+Article 94,Africa,Egypt,Univ. of Cairo,Female,P,K,X,Dr OCHC
+Article 95,Africa,Egypt,Univ. of Cairo,Male,X,H,J,Dr NVVT
+Article 96,Africa,Egypt,Univ. of Cairo,Female,C,K,E,Dr AEQJ
+Article 97,Africa,Sudan,Univ. of Kartoum,Male,Z,F,V,Dr UABV
+Article 98,Africa,Sudan,Univ. of Kartoum,Female,K,Z,F,Dr YNZO
+Article 99,Africa,Sudan,Univ. of Kartoum,Male,E,A,Q,Dr HEYQ
+Article 100,Oceania,Australia,Univ. of Sydney,Female,J,T,V,Dr BQBB
+Article 101,Oceania,Australia,Univ. of Sydney,Male,J,Y,G,Dr MUZK
+Article 102,Oceania,Australia,Univ. of Sydney,Female,T,O,O,Dr PKFM
+Article 103,Oceania,Australia,Univ. of Sydney,Male,S,X,O,Dr BWKC
+Article 104,Oceania,Australia,Univ. of Sydney,Female,Q,K,H,Dr VRTY
+Article 105,Oceania,Australia,Univ. of Sydney,Male,Z,N,G,Dr MGQD
+Article 106,Oceania,Australia,Univ. of Sydney,Female,C,O,H,Dr ERPX
+Article 107,Oceania,Australia,Univ. of Sydney,Male,O,J,Y,Dr SMYJ
+Article 108,Oceania,Australia,Univ. of Sydney,Female,W,A,H,Dr JHCG
+Article 109,Oceania,Australia,Univ. of Sydney,Male,U,E,G,Dr OCPL
+Article 110,Oceania,Australia,Univ. of Sydney,Female,F,Z,J,Dr QPJF
+Article 111,Oceania,Australia,Univ. of Melbourne,Male,U,Q,O,Dr VLBT
+Article 112,Oceania,Australia,Univ. of Melbourne,Female,H,Y,T,Dr PVRR
+Article 113,Oceania,Australia,Univ. of Melbourne,Male,V,T,W,Dr LJJB
+Article 114,Oceania,Australia,Univ. of Melbourne,Female,B,P,Y,Dr TBUT
+Article 115,Oceania,Australia,Univ. of Melbourne,Male,M,M,T,Dr ISAS
+Article 116,Oceania,Australia,Univ. of Melbourne,Female,H,E,B,Dr FNCN
+Article 117,Oceania,Australia,Univ. of Melbourne,Male,H,C,E,Dr CARQ
+Article 118,Oceania,Australia,Univ. of Melbourne,Female,H,Z,X,Dr WPPN
+Article 119,Oceania,New Zealand,Univ. of Wellington,Male,C,H,U,Dr CMTP
+Article 120,Oceania,New Zealand,Univ. of Wellington,Female,Z,T,D,Dr MLTE
+Article 121,Oceania,New Zealand,Univ. of Wellington,Male,W,P,R,Dr IRKF
+Article 122,Oceania,New Zealand,Univ. of Auckland,Female,B,C,C,Dr LKAS
+Article 123,Oceania,New Zealand,Univ. of Auckland,Male,C,L,N,Dr SFLQ
