@@ -180,7 +180,7 @@ function drawChart(root, selectedTopic) {
     .style("font-size", "2.0rem")
     .style("font-weight", "bold")
     .style("vertical-align", "middle")
-    .text("Network Hierarchy for '" + selectedTopic + "'");
+    .text("Community Network Hierarchy for '" + selectedTopic + "'");
 
   var color = d3
     .scaleLinear()
