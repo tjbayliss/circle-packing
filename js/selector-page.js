@@ -89,6 +89,8 @@ function buildSelectionPage() {
             pearlData.sourceData.forEach(function (d, i) {
               d.authorID = i;
             });
+
+            console.log(pearlData.sourceData);
             nestData();
           })
           .catch(function (error) {

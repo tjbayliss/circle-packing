@@ -73,7 +73,7 @@ function nestData() {
     );
 
     if (!dee.name) {
-      console.log(dee);
+      // console.log(dee);
       return {
         authorID: dee.authorID,
         name: /* dee.researcher_id */ dee.last_name + ", " + dee.first_name,
@@ -134,6 +134,8 @@ function nestData() {
     children: rename(nest.entries(pearlData.sourceData)), //compute the nest
   };
 
+  console.log("pearlData.treeData:", pearlData.treeData);
+
   pearlData.sourceData.forEach(function (d, i) {
     d.authorID = +i;
     d.author = d.last_name + ", " + d.first_name;
@@ -148,8 +150,6 @@ function nestData() {
   pearlData.sourceData.sort(function (a, b) {
     return a.author > b.author ? 1 : -1;
   });
-
-  console.log(pearlData.sourceData);
 
   d3.selectAll(".author-selector")
     .selectAll("option")
@@ -169,14 +169,19 @@ function nestData() {
 } // end function nestData
 
 function drawChart(root, selectedTopic) {
+  d3.selectAll(".base-group").remove();
+  d3.selectAll(".topicNameBannerlabel").remove();
+
   var svg = d3.select("svg").attr("width", w).attr("height", h);
   diameter = +svg.attr("height") - margin * 2;
   var g = svg
     .append("g")
+    .attr("class", "base-group")
     .attr("transform", "translate(" + w / 2 + "," + h / 2 + ")");
 
   d3.selectAll(".topicNameBanner")
     .append("label")
+    .attr("class", "topicNameBannerlabel")
     .style("font-size", "2.0rem")
     .style("font-weight", "bold")
     .style("vertical-align", "middle")
